@@ -1,0 +1,10 @@
+.project {
+  margin-top: 0;
+  padding: 100px 0 100px 0;
+  width: 100%;
+}
+
+.project .name {
+  position: fixed;
+}
+
