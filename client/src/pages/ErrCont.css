@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.errContContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 24, 25, 1);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    gap: 50px;
+}
+
+.errCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.selfImg {
+    max-width: 100%; 
+    width: 475px;
+    height: auto; 
+    flex-shrink: 0; 
+}
