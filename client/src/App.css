@@ -1,0 +1,132 @@
+/* Custom Fonts */
+@font-face {
+  font-family: "GT America Compressed Light";
+  src: url("https://db.onlinewebfonts.com/t/ffb5d6b052bf2b61208f52695f2a28c5.eot");
+  src: url("https://db.onlinewebfonts.com/t/ffb5d6b052bf2b61208f52695f2a28c5.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ffb5d6b052bf2b61208f52695f2a28c5.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ffb5d6b052bf2b61208f52695f2a28c5.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ffb5d6b052bf2b61208f52695f2a28c5.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ffb5d6b052bf2b61208f52695f2a28c5.svg#GT America Compressed Light")format("svg");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT America Compressed Light Italic";
+  src: url("https://db.onlinewebfonts.com/t/5a00d7e03cb2ed41e1307f501aeeafcc.eot");
+  src: url("https://db.onlinewebfonts.com/t/5a00d7e03cb2ed41e1307f501aeeafcc.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5a00d7e03cb2ed41e1307f501aeeafcc.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5a00d7e03cb2ed41e1307f501aeeafcc.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5a00d7e03cb2ed41e1307f501aeeafcc.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5a00d7e03cb2ed41e1307f501aeeafcc.svg#GT America Compressed Light Italic")format("svg");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT America Compressed Black";
+  src: url("https://db.onlinewebfonts.com/t/6ddf468308633e95bb68566e6c25a323.eot");
+  src: url("https://db.onlinewebfonts.com/t/6ddf468308633e95bb68566e6c25a323.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/6ddf468308633e95bb68566e6c25a323.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/6ddf468308633e95bb68566e6c25a323.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/6ddf468308633e95bb68566e6c25a323.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/6ddf468308633e95bb68566e6c25a323.svg#GT America Compressed Black")format("svg");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT America Compressed Black Italic";
+  src: url("https://db.onlinewebfonts.com/t/dfe745d79c4216f9035be58ed8167b5e.eot");
+  src: url("https://db.onlinewebfonts.com/t/dfe745d79c4216f9035be58ed8167b5e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/dfe745d79c4216f9035be58ed8167b5e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/dfe745d79c4216f9035be58ed8167b5e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/dfe745d79c4216f9035be58ed8167b5e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/dfe745d79c4216f9035be58ed8167b5e.svg#GT America Compressed Black Italic")format("svg");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GT America Compressed Regular";
+  src: url("https://db.onlinewebfonts.com/t/80a727403faca979fd27c6ad04c09644.eot");
+  src: url("https://db.onlinewebfonts.com/t/80a727403faca979fd27c6ad04c09644.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/80a727403faca979fd27c6ad04c09644.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/80a727403faca979fd27c6ad04c09644.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/80a727403faca979fd27c6ad04c09644.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/80a727403faca979fd27c6ad04c09644.svg#GT America Compressed Regular")format("svg");
+  font-display: swap;
+}
+
+/* Default CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 75px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  font-family: "GT America Compressed Light", Arial, sans-serif;
+  ;
+}
+
+/* main {
+  width: min(1300px, 100%);
+  margin: auto;
+} */
+
+/* .pullDown {
+  animation: pullDown 1s ease-out forwards;
+}
+
+.riseUp {
+  animation: riseUp 1s ease forwards;
+} */
+
+@keyframes riseUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pullDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 780px) {
+
+  .mobileName,
+  .mobileHeading {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 20px;
+  }
+
+  .banner .name {
+    display: none;
+  }
+}

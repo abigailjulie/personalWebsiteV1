@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.main {
+    background-image: url("https://images.unsplash.com/photo-1589810264340-0ce27bfbf751?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    margin-top: 0;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.banner .name {
+    position: fixed;
+    top: 25%;
+}
+
+.tagline {
+    margin-top: 20px;
+}
+
+.banner p {
+    color: black;
+    font-size: 1.15rem;
+    letter-spacing: 0.4px;
+    line-height: 1.25em;
+    width: 100%;
+}
+
+.banner .aboutMeP {
+    margin: 20px 0;
+}
+
+.banner h1 {
+    font-family: "GT America Compressed Black", sans-serif;
+    font-size: 6rem;
+}
+
+.banner h2 {
+    font-family: "GT America Compressed regular", sans-serif;
+    font-size: 2rem;
+    line-height: .6em;
+}
+
+.jobTitles {
+    margin-top: 20px;
+}
+
+.banner .jobNew {
+    margin-bottom: 0;
+}
+
+.banner .jobOld {
+    color: rgba(26, 24, 25, .25);
+}
+
+.projects {
+    padding-top: 80px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul .project {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+}
+
+a:link,
+a:visited {
+    color: #151515;
+    text-decoration: none;
+}
+
+.nameNav a {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    font-family: "GT America Compressed Black", sans-serif;
+}
+
+.nameNav .bi-arrow-right-short {
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.nameNav a:hover .bi-arrow-right-short {
+    opacity: 1;
+    transform: translateX(10px);
+}
