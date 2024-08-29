@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import Error from '../pages/Error';
+import React, { Component } from "react";
+import Error from "../pages/Error";
 
 class ErrorBoundary extends Component {
     constructor(props) {
@@ -13,7 +13,7 @@ class ErrorBoundary extends Component {
 
     //update this so that its logs in a more sophiscated way when disployed
     componentDidCatch(error, errorInfo) {
-        console.error('Error caught by ErrorBoundary:', error, errorInfo);
+        console.error("Error caught by ErrorBoundary:", error, errorInfo);
     }
 
     render() {

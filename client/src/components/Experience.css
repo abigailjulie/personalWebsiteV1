@@ -7,37 +7,42 @@ body {
     margin-top: 75px;
 }
 
-.experience {
-    margin-top: 75px;
-    font-family: "GT America Compressed Light", sans-serif;
-    font-size: 2rem;
-    color: rgba(26, 24, 25, .25);
+.projectLink {
+    display: flex;
+    align-items: center;
+    padding: 25px 25px 25px 0;
 }
 
-section .year {
-    display: flex;
-    justify-content: end;
-    align-items: start;
+.year,
+.job {
+    padding: 0;
+    margin: 0;
+}
+
+.expSection .year {
+    align-items: flex-start;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
 }
 
 section .year p {
-    font-family: "GT America Compressed Light", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transform: rotate(-90deg);
-    white-space: nowrap;
-    left: 0;
+    margin: 0;
+    white-space: nowrap; 
 }
 
 .job h4 {
-    font-family: "GT America Compressed Light", sans-serif;
-    font-size: 6rem;
     font-weight: 300;
+    font-size: 5rem;
+    margin: 0;
 }
 
 .job h5 {
-    font-family: "GT America Compressed Light", sans-serif;
+    font-weight: 300;
     font-size: 2rem;
-    color: rgba(26, 24, 25, 1);
+    color: rgba(26, 24, 25, 1); 
 }
 
 .aplusi .expJobTitles {
@@ -49,22 +54,24 @@ section .year p {
 }
 
 section .job p {
-    font-family: "GT America Compressed Light", sans-serif;
-    color: rgba(26, 24, 25, 1);
+    font-weight: 200;
+    color: rgba(26, 24, 25, 1); 
     margin: 0;
 }
 
-section .jobOld {
-    font-family: "GT America Compressed Light", sans-serif;
-    color: rgba(26, 24, 25, .25);
+.aplusi .expJobTitles .jobOld {
+    font-weight: 200;
+    color: rgba(26, 24, 25, .4);
 }
 
-.expSection {
-    margin: 25px 0;
+.expSection .projectLink:hover {
+    background-color: rgba(225, 225, 225, 1);
+    border-radius: 5px;
 }
 
 .cvLink {
-    font-family: "GT America Compressed Black", sans-serif;
+    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+    font-weight: 600;
     font-size: 1.10rem;
     color: inherit;
     display: inline-flex;
@@ -81,3 +88,24 @@ section .jobOld {
     transform: translateX(10px);
 }
 
+@media only screen and (max-width: 1024px) {
+    .job h4 {
+        font-size: 3rem;
+    }
+    .job h5 {
+        font-size: 1.25rem;
+    }
+    .projectLink {
+        padding: 15px;
+    }
+    .expContainer {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .cvLink,
+    .projectLink {
+        padding: 10px;
+    }
+}

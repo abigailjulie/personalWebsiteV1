@@ -3,6 +3,8 @@
   flex-direction: column;
   width: 100vw;
   box-sizing: border-box;
+  background-color: rgba(242, 242, 242, 1);
+  color: rgba(26, 24, 25, 1);
 }
 
 .headBlock {
@@ -17,11 +19,6 @@
   box-sizing: border-box;
 }
 
-.pullDown {
-  animation: pullDown 1s ease-out forwards;
-  animation-delay: 0.5s;
-}
-
 .headText {
   display: flex;
   flex-direction: column;
@@ -32,15 +29,17 @@
 }
 
 .headText h1 {
-  font-size: 8em;
+  font-size: 6em;
   margin: 0;
-  font-family: "GT America Compressed Light", sans-serif;
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+  font-weight: 300;
 }
 
 .headText h6 {
   font-size: 1.5em;
   margin-top: 20px;
-  font-family: "GT America Compressed Light", sans-serif;
+  font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+  font-weight: 100;
 }
 
 .backBtn {
@@ -117,10 +116,6 @@
   transition: all 0.2s linear;
 }
 
-.cardsItemImg:hover {
-  transform: scale(1.1);
-}
-
 .cardsItemInfo {
   padding: 0px 20px 20px;
 }
@@ -148,56 +143,56 @@
   opacity: 1;
 }
 
-@media only screen and (max-width: 992px) {
-  .headBlock {
-    height: 60vh;
-    padding: 4% 0;
-  }
-
-  .headText {
-    padding-top: 8%;
-  }
-
+@media only screen and (max-width: 1200px) {
   .headText h1 {
     font-size: 5em;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .SPPContainer {
+    padding: 40px 15px;
+  }
+
+  .SPPItems {
+    max-width: 100%;
+    margin-bottom: 2rem;
+    flex: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .SPPItems {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .headText h1 {
+    font-size: 3em;
   }
 
   .headText h6 {
     font-size: 1.1em;
   }
 
-  .SPPItems {
-    grid-template-columns: repeat(2, 1fr);
+  .SPPItem {
+    max-width: 100%;
   }
 
-  .cardsItem {
-    margin: .5rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .headBlock {
-    height: 50vh;
-    padding: 3% 0;
-    display: flex;
-    text-align: center;
+  .SPPContainer {
+    padding: 20px;
   }
 
-  .headText {
-    padding-top: 5%;
-  }
-
-  .headText h1 {
-    font-size: 10vw;
-    color: green;
-    margin: 0;
-  }
-
-  .headText h6 {
-    font-size: 1em;
+  .SPPItem {
+    width: 100%;
   }
 
   .SPPItems {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .backBtn {
+    display: none;
   }
 }

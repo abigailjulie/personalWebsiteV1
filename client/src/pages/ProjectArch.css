@@ -1,18 +1,30 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100%;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
 }
 
 h3 {
     margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     font-size: 3em;
+    text-align: center;
 }
 
 p {
@@ -21,12 +33,10 @@ p {
 }
 
 .overview {
-    font-family: "Petit Formal Script", cursive;
-    font-size: 2em;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     font-style: italic;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-weight: 200;
+    font-size: 2em;
     text-align: center;
 }
 
@@ -34,30 +44,28 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(26, 24, 25, 255);
+    background-color: rgba(26, 24, 25, 1);
     width: 100vw;
     height: 95vh;
-    color: rgba(247, 242, 234, 255);
+    color: rgba(242, 242, 242, 1);
     padding-bottom: 100px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
 }
 
 .black h1 {
     font-size: 8em;
     margin: 0;
-    font-family: "GT America Compressed Light", sans-serif;
-    font-weight: 300;
+    font-weight: 600;
 }
 
-.head {
-    padding-top: 100px;
-}
-
-.images {
-    padding-top: 100px;
-}
-
+.head, 
+.images,
 .image {
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .solutionGraphic {
@@ -72,6 +80,12 @@ p {
 
 .solutionGraphic i {
     font-size: 4em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .challenge img,
@@ -93,7 +107,6 @@ p {
     gap: 10px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    /* margin: 50px 0; */
 }
 
 .imgBorder {
@@ -108,16 +121,14 @@ p {
     gap: 50px;
     width: 90%;
     margin: 0 auto;
-    /* Center the grid horizontally */
 }
 
 .scope {
-    background-color: #d3d3d3;
+    background-color: rgba(225, 225, 225, 1);
     padding: 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 100%; */
 }
 
 .roles {
@@ -128,7 +139,6 @@ p {
 
 .roles li {
     margin-bottom: 5px;
-    /* Adjust list item spacing */
 }
 
 .processImgs {
@@ -201,6 +211,10 @@ p {
 .node {
     object-fit: cover;
 }
+.awards li {
+    text-align: center;
+    margin-top: 25px;
+}
 
 /* Third Point */
 
@@ -230,6 +244,11 @@ p {
     margin: 50px auto;
 }
 
+.status h6 {
+    text-align: center;
+    margin: 50px 0;
+}
+
 /* Cammpus Canal */
 
 .caseStudy {
@@ -238,11 +257,15 @@ p {
 
 .caseStudy h1 {
     margin-bottom: 20px;
+    text-align: center;
 }
 
-.caseStudy img {
-    box-sizing: border-box;
-    margin: 75px auto 0 auto;
+.axon {
+    margin: 0 auto;
+}
+
+.reducedMargin {
+    margin-top: 0;
 }
 
 @media only screen and (max-width: 992px) {
@@ -271,7 +294,7 @@ p {
 @media only screen and (max-width: 768px) {
     .headBlock {
         height: 50vh;
-        padding: 3% 0;
+        padding: 20px 0;
         display: flex;
         text-align: center;
     }
@@ -281,8 +304,7 @@ p {
     }
 
     .headText h1 {
-        font-size: 10vw;
-        color: green;
+        font-size: 4rem;
         margin: 0;
     }
 

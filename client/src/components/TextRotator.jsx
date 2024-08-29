@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import './TextRotator.css';
+import React, { useState, useEffect } from "react";
+import "./TextRotator.css";
 
 export default function TextRotator({ toRotate, period }) {
-    const [text, setText] = useState('');
+    const [text, setText] = useState("");
     const [loopNum, setLoopNum] = useState(0);
     const [delta, setDelta] = useState(300 - Math.random() * 100);
 
@@ -33,18 +33,15 @@ export default function TextRotator({ toRotate, period }) {
         // Start text rotation once on mount
         const initialTicker = setTimeout(() => {
             setLoopNum(prev => prev + 1);
-            setDelta(300 - Math.random() * 100); // Reset delta if needed
+            setDelta(300 - Math.random() * 100);
         }, period);
 
         return () => clearTimeout(initialTicker);
     }, [period]);
 
     return (
-        <div className="welcome">
-            <h1>Welcome!</h1>
-            <h4 className='txt-rotate'>
-                <span className='wrap'>{text}</span>
+            <h4 className="txt-rotate">
+                <span className="wrap">{text}</span>
             </h4>
-        </div>
     );
 }

@@ -1,7 +1,8 @@
-import React from 'react';
-import '../pages/ErrCont.css';
-import VerticalStack from '../components/VerticalStack';
-import Abigail from '../assets/images/AbigailPhoto.jpg';
+import React from "react";
+import "../pages/ErrCont.css";
+import VerticalStack from "../components/VerticalStack";
+import Abigail from "../assets/images/AbigailPhoto.jpg";
+import TextRotator from "../components/TextRotator";
 
 export default function Contact() {
   return (
@@ -9,7 +10,7 @@ export default function Contact() {
         <img src={Abigail} alt="Photo of Abigail"  className="selfImg" />
         <div className="errCont">
           <h1>Want More?</h1>
-          <h4>let 's connect</h4>
+          <TextRotator toRotate={[`let's connect`]} period={200} />
           <VerticalStack showHomeLink={false} />
         </div>
     </div>

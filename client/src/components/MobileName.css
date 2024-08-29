@@ -1,0 +1,23 @@
+h1 {
+    font-weight: 600;
+    font-size: 6rem;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: .6em;
+}
+
+.tagline {
+    margin-top: 20px;
+}
+
+.jobNew {
+    margin-bottom: 0;
+}
+
+.jobOld {
+    font-weight: 200;
+    color: rgba(26, 24, 25, .4);
+}

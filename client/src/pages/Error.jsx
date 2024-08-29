@@ -1,7 +1,8 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import VerticalStack from '../components/VerticalStack';
-import './ErrCont.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import VerticalStack from "../components/VerticalStack";
+import TextRotator from "../components/TextRotator";
+import "./ErrCont.css";
 
 export default function Error() {
    const email = "abigail.figaro@gmail.com";
@@ -10,7 +11,7 @@ export default function Error() {
       <div className="errContContainer">
          <div className="errCont">
             <h1>Whoops!</h1>
-            <h4>Something went wrong</h4>
+            <TextRotator toRotate={[`Something went wrong`]} period={200} className="textRotateWrap" />
             <VerticalStack showHomeLink = {true}/>
          </div>
       </div>
