@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Backend server using Express",
   "scripts": {
-    "start": "nodemon index.js",
-    "dev": "nodemon index.js"
+    "start": "node index.js", 
+    "dev": "nodemon index.js" 
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
