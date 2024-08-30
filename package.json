@@ -3,11 +3,9 @@
   "version": "1.0.0",
   "description": "Monorepo setup for client and server",
   "scripts": {
-    "build": "npm run build --prefix client"
+    "build": "npm run build --prefix client" 
   },
-  "devDependencies": {
-    "concurrently": "^8.2.2"
-  },
+  "devDependencies": {},
   "keywords": [],
   "author": "",
   "license": "ISC"
