@@ -4,7 +4,7 @@
   "description": "Backend server using Express",
   "scripts": {
     "start": "node index.js", 
-    "dev": "nodemon index.js" 
+    "dev": "nodemon index.js"
   },
   "dependencies": {
     "bcrypt": "^5.1.1",
