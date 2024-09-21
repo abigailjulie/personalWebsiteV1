@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.expContainer {
+    margin-top: 75px;
+}
+
+.projectLink {
+    display: flex;
+    align-items: center;
+    padding: 25px 25px 25px 0;
+}
+
+.year,
+.job {
+    padding: 0;
+    margin: 0;
+}
+
+.expSection .year {
+    align-items: flex-start;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+section .year p {
+    font-size: 1rem;
+    transform: rotate(-90deg);
+    margin: 0;
+    white-space: nowrap; 
+}
+
+.job h4 {
+    font-weight: 300;
+    font-size: 5rem;
+    margin: 0;
+}
+
+.job h5 {
+    font-weight: 300;
+    font-size: 2rem;
+    color: rgba(26, 24, 25, 1); 
+}
+
+.aplusi .expJobTitles {
+    margin-bottom: 25px;
+}
+
+.aplusi .expJobTitles h5 {
+    line-height: .35em;
+}
+
+section .job p {
+    font-weight: 200;
+    color: rgba(26, 24, 25, 1); 
+    margin: 0;
+}
+
+.aplusi .expJobTitles .jobOld {
+    font-weight: 200;
+    color: rgba(26, 24, 25, .4);
+}
+
+.expSection .projectLink:hover {
+    background-color: rgba(225, 225, 225, 1);
+    border-radius: 5px;
+}
+
+.cvLink {
+    font-family: "Oswald", "Arial Narrow", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 1.10rem;
+    color: inherit;
+    display: inline-flex;
+    margin-top: 25px;
+}
+
+.cvLink .bi-arrow-right-short {
+    opacity: 0;
+    transition: transform 0.3s ease;
+}
+
+.cvLink:hover .bi-arrow-right-short {
+    opacity: 1;
+    transform: translateX(10px);
+}
+
+@media only screen and (max-width: 1024px) {
+    .job h4 {
+        font-size: 3rem;
+    }
+    .job h5 {
+        font-size: 1.25rem;
+    }
+    .projectLink {
+        padding: 15px;
+    }
+    .expContainer {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .cvLink,
+    .projectLink {
+        padding: 10px;
+    }
+}

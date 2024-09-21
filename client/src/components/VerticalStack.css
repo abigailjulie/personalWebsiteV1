@@ -1,0 +1,46 @@
+.errContBadges {
+    color: rgba(26, 24, 25, 1);
+    font-size: 2rem;
+    font-weight: 100;
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.errContBadge {
+    display: block;
+    width: 100%;
+    font-size: 1.25rem;
+    font-weight: 200;
+    margin-bottom: .75rem;
+}
+
+.errCont h1 {
+    color: rgba(242, 242, 242, 1);
+    font-weight: 300;
+    font-size: 12rem;
+    margin: 0;
+}
+
+.errCont h4 {
+    color: rgba(242, 242, 242, 1);
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+@media (max-width: 768px) {
+    .errCont h1 {
+        font-size: 4rem;
+    }
+
+    .errCont h4 {
+        font-size: 2rem;
+    }
+
+    .errContBadges {
+        width: 90%;
+    }
+}
