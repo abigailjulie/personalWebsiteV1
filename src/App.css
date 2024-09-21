@@ -1,0 +1,66 @@
+#root {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 75px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  position: relative;
+  font-family: 'Oswald', "Arial Narrow", Arial, sans-serif;
+  font-style: ExtraLight;
+  font-weight: 200;
+  ;
+}
+
+.pullDown {
+  animation: pullDown 1s ease-out forwards;
+}
+
+@keyframes riseUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pullDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 780px) {
+
+  .mobileName,
+  .mobileHeading {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    padding: 20px;
+  }
+
+  .banner .name {
+    display: none;
+  }
+}

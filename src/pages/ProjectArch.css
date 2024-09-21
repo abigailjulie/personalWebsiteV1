@@ -1,0 +1,321 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#root {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h3 {
+    margin-top: 100px;
+    font-size: 3em;
+    text-align: center;
+}
+
+p {
+    margin-top: 50px;
+    text-align: justify;
+}
+
+.overview {
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 2em;
+    text-align: center;
+}
+
+.black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(26, 24, 25, 1);
+    width: 100vw;
+    height: 95vh;
+    color: rgba(242, 242, 242, 1);
+    padding-bottom: 100px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.black h1 {
+    font-size: 8em;
+    margin: 0;
+    font-weight: 300;
+}
+
+.head,
+.images,
+.image {
+    padding-top: 100px;
+}
+
+.solutionGraphic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.solutionGraphic .bi-arrow-right {
+    margin: 0 10px;
+}
+
+.solutionGraphic i {
+    font-size: 4em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.challenge img,
+.solution img,
+.lessons img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding-top: 50px;
+}
+
+.challenge p {
+    margin: 50px;
+}
+
+.landUse {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.imgBorder {
+    border: .5px solid #555;
+    padding-top: 0px;
+}
+
+.workPaired {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.scope {
+    background-color: rgba(225, 225, 225, 1);
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.roles {
+    margin-top: 25px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.roles li {
+    margin-bottom: 5px;
+}
+
+.processImgs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.headImgs img,
+.role img,
+.challenge img,
+.problem img,
+.solution img,
+.lessons img,
+.caseStudy img,
+.LibraryImages img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.problemImg {
+    padding-top: 50px;
+}
+
+.sections {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.backTop {
+    width: 100%
+}
+
+.centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Penn1 */
+
+.problemImgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+    margin: 75px auto 50px auto;
+}
+
+.nodes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.node {
+    object-fit: cover;
+}
+
+.awards li {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* Third Point */
+
+.ThirdPointSections {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    gap: 10px;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.dataPlans {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 60%;
+    padding-top: 50px;
+}
+
+.dataElevs {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.status h6 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Cammpus Canal */
+
+.caseStudy {
+    margin-top: 100px;
+}
+
+.caseStudy h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.axon {
+    margin: 0 auto;
+}
+
+.reducedMargin {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .headBlock {
+        height: 60vh;
+        padding: 4% 0;
+    }
+
+    .headText {
+        padding-top: 8%;
+    }
+
+    .headText h1 {
+        font-size: 5em;
+    }
+
+    .headText h6 {
+        font-size: 1.1em;
+    }
+
+    .archItems {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .headBlock {
+        height: 50vh;
+        padding: 20px 0;
+        display: flex;
+        text-align: center;
+    }
+
+    .headText {
+        padding-top: 5%;
+    }
+
+    .headText h1 {
+        font-size: 4rem;
+        margin: 0;
+    }
+
+    .headText h6 {
+        font-size: 1em;
+    }
+
+    .archItems {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

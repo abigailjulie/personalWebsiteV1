@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.errContContainer {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(26, 24, 25, 1);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.errContContainer img {
+    border-radius: 15px;
+}
+
+.errCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.errCont h1 {
+    font-size: 6rem;
+    font-weight: 400;
+}
+
+.textRotateWrap {
+    margin: 50px;
+}
+
+.selfImg {
+    max-width: 100%;
+    width: 475px;
+    height: auto;
+    flex-shrink: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+    .errCont h1 {
+        font-size: 2.5rem;
+    }
+
+    .errCont h4 {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .errContContainer {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .selfImg {
+        max-width: 80%;
+        margin-bottom: 15px;
+    }
+
+    .errCont h1 {
+        font-size: 3rem;
+    }
+
+    .errCont h4 {
+        font-size: 1.1rem;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .selfImg {
+        max-width: 70%;
+        margin-bottom: 10px;
+    }
+
+    .errCont h1 {
+        font-size: 3rem;
+    }
+
+    .errCont h4 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .selfImg {
+        max-width: 60%;
+        margin-bottom: 10px;
+    }
+
+    .errCont h1 {
+        font-size: 3rem;
+    }
+
+    .errCont h4 {
+        font-size: 0.9rem;
+    }
+}
